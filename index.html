@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mduduzi Abdul Mahlangu's landing page for WDD 131 - Dynamic Web Fundamentals, featuring a bio, favorite resources, and a note about Mamelodi, South Africa."
+    />
+    <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="styles/base.css" />
     <script src="scripts/getdates.js" defer></script>
-    <title>WDD 131 Page</title>
+    <title>Mduduzi Abdul Mahlangu - WDD 131 Fundamentals</title>
   </head>
 
   <body>
-    <header>WDD 131: Dynamic Web Fundamentals</header>
+    <header>
+      <span>WDD 131: Dynamic Web Fundamentals</span>
+    </header>
 
-    <nav>
+    <nav aria-label="Main Navigation">
       <a href="https://www.linkedin.com/in/abdul-mahlangu/" target="_blank"
         >LinkedIn</a
       >
@@ -26,72 +33,93 @@
 
     <h1>M. Abdul Mahlangu</h1>
 
-    <div class="container">
-      <!-- About Me -->
-      <div class="card">
-        <div class="card-header">About Me</div>
-        <div class="card-content">
-          <div class="about-top">
-            <p>
-              My name is Rubia and I go by Ruby. I was born in South Africa and
-              live my family in Madagascar. I am currently working as
-              administrative legal assistant at a law firm. My children are my
-              world and I love spending time with them. I love to travel and I
-              love to learn new things.
-            </p>
-            <img src="images/mdu_abdul_888.jpg" alt="Profile Image" />
-          </div>
-
-          <div class="location">
-            <h3>Mamelodi, South Africa</h3>
-            <hr />
-
-            <div class="location-content">
-              <div>
-                <img
-                  class="flag"
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
-                  alt="Madagascar Flag"
-                />
-                <div class="flag-caption">Official South African Flag</div>
-              </div>
-
+    <main>
+      <div class="container">
+        <!-- About Me -->
+        <div class="card">
+          <h2 class="card-header">About Me</h2>
+          <div class="card-content">
+            <div class="about-top">
               <p>
-                Mamelodi is a vibrant township located east of Pretoria in
-                Gauteng, South Africa. Established during the apartheid era in
-                the 1950s, it has developed into a dynamic community known for
-                its rich cultural heritage, music, and strong social bonds. The
-                area is home to a diverse population and has produced many
-                notable artists and athletes. Mamelodi continues to grow, with
-                expanding infrastructure, schools, and local businesses
-                contributing to its development. It remains a symbol of
-                resilience and community strength in South Africa.
+                Hi everyone, I'm Abdul from Pretoria, South Africa. I previously
+                worked as a web development intern at Eragateway (7 months) and
+                at xSELLerate Consulting (7 months). I enjoy traveling and
+                learning new things.
               </p>
+              <img
+                src="images/mdu_abdul_888.jpg"
+                alt="Headshot of Mduduzi Abdul Mahlangu"
+              />
+            </div>
+
+            <div class="location">
+              <h3>Mamelodi, South Africa</h3>
+              <hr />
+
+              <div class="location-content">
+                <div>
+                  <img
+                    class="flag"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
+                    alt="Flag of South Africa"
+                  />
+                  <div class="flag-caption">Official South African Flag</div>
+                </div>
+
+                <p>
+                  Mamelodi is a vibrant township located east of Pretoria in
+                  Gauteng, South Africa. Established during the apartheid era in
+                  the 1950s, it has developed into a dynamic community known for
+                  its rich cultural heritage, music, and strong social bonds.
+                  The area is home to a diverse population and has produced many
+                  notable artists and athletes. Mamelodi continues to grow, with
+                  expanding infrastructure, schools, and local businesses
+                  contributing to its development. It remains a symbol of
+                  resilience and community strength in South Africa.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Resources -->
-      <div class="card">
-        <div class="card-header">Web Dev Resources</div>
-        <div class="card-content">
-          <ul>
-            <li><a href="#">Dev.to Community</a></li>
-            <li><a href="#">Smashing Magazine</a></li>
-            <li><a href="#">CSS Tricks</a></li>
-            <li><a href="#">W3 Schools</a></li>
-            <li><a href="#">Udemy</a></li>
-            <li><a href="#">Lorem Picsum</a></li>
-          </ul>
+        <!-- Resources -->
+        <div class="card">
+          <h2 class="card-header">Web Dev Resources</h2>
+          <div class="card-content">
+            <ul>
+              <li>
+                <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+              </li>
+              <li>
+                <a href="https://www.smashingmagazine.com/" target="_blank"
+                  >Smashing Magazine</a
+                >
+              </li>
+              <li>
+                <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/" target="_blank"
+                  >W3 Schools</a
+                >
+              </li>
+              <li>
+                <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer>
-      © <span id="year"></span> Mduduzi Abdul Mahlangu &bull; All Rights
+      © <span id="year"></span> &bull; Mduduzi Abdul Mahlangu &bull; All Rights
       Reserved
       <br />
+      <hr />
       <span id="lastModified"></span>
     </footer>
   </body>

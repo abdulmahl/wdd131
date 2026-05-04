@@ -72,7 +72,7 @@ h1 {
 }
 
 .about-top img {
-  width: 131px;
+  width: 120px;
   border-radius: 10px;
 }
 
@@ -110,13 +110,25 @@ ul li {
   margin: 0.5rem 0;
 }
 
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  width: 333px;
+}
+
 /* Footer */
 footer {
   background: #2c5d7c;
   color: white;
   text-align: center;
-  padding: 2rem;
-  margin-top: 1rem;
+  padding: 0.666rem;
+  margin-top: 0.5rem;
 }
 
 #lastModified {
