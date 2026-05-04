@@ -1,0 +1,31 @@
+.title {
+  text-align: center;
+}
+
+.container {
+  padding: 0.955rem;
+  width: 57rem;
+  margin: auto;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 0.333rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > p {
+  text-align: center;
+  padding: 0.758rem;
+}

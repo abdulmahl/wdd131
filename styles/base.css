@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background: #2c5d7c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  background: #333;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+/* Main Title */
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.card-header {
+  background: #2c5d7c;
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+/* About layout */
+.about-top {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-top img {
+  width: 131px;
+  border-radius: 10px;
+}
+
+.location {
+  margin-top: 1rem;
+}
+
+.location h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.location-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flag {
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+.flag-caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  background: #2c5d7c;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+#lastModified {
+  color: yellow;
+}
