@@ -7,15 +7,21 @@ body {
 
 /* Header */
 header {
-  background: #2c5d7c;
-  color: white;
+  display: flex;
+  flex-direction: column;
   font-size: 1.5rem;
+
   text-align: center;
 }
 
-#course-title {
+header div {
+  background: #2c5d7c;
   padding: 1rem;
-  margin: 0;
+}
+
+#course-title {
+  color: white;
+  font-size: larger;
 }
 
 /* Navigation */
