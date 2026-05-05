@@ -9,9 +9,13 @@ body {
 header {
   background: #2c5d7c;
   color: white;
-  text-align: center;
-  padding: 1rem;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+#course-title {
+  padding: 1rem;
+  margin: 0;
 }
 
 /* Navigation */
@@ -37,6 +41,10 @@ h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+}
+
+main {
+  padding: 0 1rem;
 }
 
 /* Layout */
@@ -135,11 +143,16 @@ footer {
   background: #2c5d7c;
   color: white;
   text-align: center;
-  padding: 0.666rem;
-  margin-top: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.4rem;
   font-size: small;
+}
+
+footer p {
+  margin: 0;
 }
 
 #lastModified {
   color: yellow;
+  margin-top: 0.3rem;
 }

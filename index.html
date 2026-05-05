@@ -3,40 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 Dynamic Web Fundamentals home page for Mduduzi Abdul Mahlangu, showcasing web development skills and resources."
+    />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/base.css" />
+
+    <title>WDD 131 Dynamic Web Fundamentals - Mduduzi Abdul Mahlangu</title>
     <script src="scripts/getdates.js" defer></script>
-    <title>Mduduzi Abdul Mahlangu - WDD 131 Fundamentals</title>
   </head>
 
   <body>
     <header>
-      <span>WDD 131: Dynamic Web Fundamentals</span>
+      <p id="course-title">WDD 131: Dynamic Web Fundamentals</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/abdul-mahlangu/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="#" target="_blank">I-Learn</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng&id=p34#p34"
+          target="_blank"
+          >Scripture</a
+        >
+        <a href="#" target="_blank">Final Project</a>
+      </nav>
     </header>
 
-    <nav>
-      <a href="https://www.linkedin.com/in/abdul-mahlangu/" target="_blank"
-        >LinkedIn</a
-      >
-      <a href="#" target="_blank">I-Learn</a>
-      <a
-        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng&id=p34#p34"
-        target="_blank"
-        >Scripture</a
-      >
-      <a href="#" target="_blank">Final Project</a>
-    </nav>
-
-    <h1>M. Abdul Mahlangu</h1>
-
     <main>
+      <h1>M. Abdul Mahlangu</h1>
       <div class="container">
         <!-- About Me -->
-        <div class="card">
-          <h2 class="card-header">About Me</h2>
+        <section class="card">
+          <h3 class="card-header">About Me</h3>
           <div class="card-content">
             <div class="about-top">
               <p>
@@ -45,12 +52,12 @@
                 at xSELLerate Consulting (7 months), where I gained hands-on
                 experience with front-end technologies, responsive design, and
                 team collaboration. I'm currently deepening my skills in
-                JavaScript, CSS architecture, and modern web frameworks. My goal is to become a
-                well-rounded developer who builds accessible, meaningful web
-                experiences.
+                JavaScript, CSS architecture, and modern web frameworks. My goal
+                is to become a well-rounded developer who builds accessible,
+                meaningful web experiences.
               </p>
               <img
-                src="images/mdu_abdul_888.jpg"
+                src="images/mduabdul.jpg"
                 alt="Headshot of Mduduzi Abdul Mahlangu"
               />
             </div>
@@ -83,11 +90,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Resources -->
-        <div class="card">
-          <h2 class="card-header">Web Dev Resources</h2>
+        <section class="card">
+          <h3 class="card-header">Web Dev Resources</h3>
           <div class="card-content">
             <ul>
               <li>
@@ -114,16 +121,16 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 
     <footer>
-      © <span id="year"></span> &bull; Mduduzi Abdul Mahlangu &bull; All Rights
-      Reserved
-      <br />
-      <hr />
-      <span id="lastModified"></span>
+      <p>
+        © <span id="year"></span> &bull; Mduduzi Abdul Mahlangu &bull; All
+        Rights Reserved
+      </p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>
