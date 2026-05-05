@@ -83,13 +83,12 @@ main {
 /* About layout */
 .about-top {
   display: flex;
-  align-items: center;
   gap: 1rem;
   font-size: smaller;
 }
 
 .about-top img {
-  width: 10%;
+  width: 80px;
   height: auto;
   border-radius: 10px;
 }
