@@ -16,7 +16,7 @@ header {
 
 header div {
   background: #2c5d7c;
-  padding: .444rem;
+  padding: 0.444rem;
 }
 
 #course-title {
@@ -137,10 +137,6 @@ ul li a {
 
 ul li a:hover {
   text-decoration: underline;
-}
-
-footer hr {
-  width: 333px;
 }
 
 /* Footer */
