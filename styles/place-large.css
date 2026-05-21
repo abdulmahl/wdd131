@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+  .hero {
+    min-height: 568px;
+  }
+
+  .cards-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    grid-template-columns: 1fr 333px;
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .cards-container {
+    padding: 1rem;
+    align-items: end;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .weather-card {
+    height: 222px;
+  }
+
+  header,
+  footer {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    margin: 2rem auto;
+    border-radius: var(--border-radius);
+  }
+
+  .weather-card {
+    width: 333px;
+    height: 222px;
+  }
+
+  .data-card {
+    width: 444px;
+  }
+
+  .hero {
+    min-height: 510px;
+  }
+  footer {
+    padding: 0.666rem;
+  }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="South Africa – the Rainbow Nation: key facts, weather, and wind chill information."
+    />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <title>
+      WDD 131: Dynamic Web Fundamentals | Mduduzi Abdul Mahlangu | Place: South
+      Africa
+    </title>
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>South Africa</h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/mountain.jpg" media="(min-width: 768px)" />
+          <img
+            src="images/mountain.jpg"
+            alt="Table Mountain and Cape Town coastline, South Africa"
+            loading="lazy"
+          />
+        </picture>
+
+        <section class="cards-container">
+          <div class="card data-card">
+            <h2>Data</h2>
+
+            <ul>
+              <li><strong>Area:</strong> 1,221,037 sq km</li>
+              <li><strong>Population:</strong> 60 Million+</li>
+              <li><strong>Capital:</strong> Pretoria (executive)</li>
+              <li><strong>Languages:</strong> 11 Official Languages</li>
+              <li><strong>Currency:</strong> South African Rand (ZAR)</li>
+              <li><strong>Time Zone:</strong> SAST (UTC+2)</li>
+              <li><strong>Calling Code:</strong> +27</li>
+              <li><strong>Internet TLD:</strong> .za</li>
+            </ul>
+          </div>
+
+          <div class="card weather-card">
+            <h2>Weather</h2>
+            <div class="weather-icon-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+                fill="#f39c12"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"
+                />
+              </svg>
+            </div>
+            <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="speed">12</span> km/h</p>
+            <p>
+              <strong>Wind Chill:</strong>
+              <span id="windchill">5.4 &deg;C</span>
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> | Mduduzi Abdul | South Africa</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
