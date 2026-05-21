@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/place-large.css" />
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
   </head>
 
   <body>
@@ -33,9 +34,18 @@
     <main>
       <section class="hero">
         <picture>
-          <source srcset="images/mountain.jpg" media="(min-width: 768px)" />
+          <source
+            srcset="images/mountain-large.webp"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="images/mountain-small.webp"
+            media="(max-width: 767px)"
+          />
+
           <img
-            src="images/mountain.jpg"
+            src="images/mountain-small.webp"
             alt="Table Mountain and Cape Town coastline, South Africa"
             loading="lazy"
           />
@@ -72,12 +82,12 @@
                 />
               </svg>
             </div>
-            <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+            <p><strong>Temperature:</strong> <span id="temp">18</span> °C</p>
             <p><strong>Conditions:</strong> Partly Cloudy</p>
             <p><strong>Wind:</strong> <span id="speed">12</span> km/h</p>
             <p>
               <strong>Wind Chill:</strong>
-              <span id="windchill">5.4 &deg;C</span>
+              <span id="windchill">--</span>
             </p>
           </div>
         </section>
