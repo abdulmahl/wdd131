@@ -39,10 +39,10 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   border-bottom: 6px solid var(--primary-gold);
-  width: 25rem;
+  width: 21rem;
   margin: 0 auto;
 }
 

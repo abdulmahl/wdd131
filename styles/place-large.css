@@ -43,6 +43,11 @@
     position: relative;
     z-index: 2;
   }
+
+  header h1 {
+    font-size: 3rem;
+    width: 25rem;
+  }
 }
 
 @media (min-width: 1200px) {
