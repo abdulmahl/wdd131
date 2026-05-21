@@ -15,5 +15,5 @@ const windchillElement = document.getElementById("windchill");
 if (temp <= 10 && speed > 4.8) {
   windchillElement.textContent = `${calculateWindChill(temp, speed)} °C`;
 } else {
-  windchillElement.textContent = "N/A";
+  windchillElement.textContent = "--";
 }
