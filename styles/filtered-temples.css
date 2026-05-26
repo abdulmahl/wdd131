@@ -1,0 +1,134 @@
+body {
+  font-family: Nunito, sans-serif;
+  color: #2e241f;
+}
+
+header {
+  background: #2e241f; /* deep temple brown */
+  color: #f5e7d9;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hamburger button */
+#menuButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #f5e7d9;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile default: hide nav */
+#navMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-weight: 600;
+  border-top: 1px solid #f5e7d9;
+  background: #2e241f;
+  width: 327px;
+  padding: 1rem;
+}
+
+/* Show nav when open class is added */
+#navMenu.open {
+  display: block;
+}
+
+/* Remove bullets */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  color: #f5e7d9;
+  font-size: 1rem;
+}
+
+nav {
+  display: none;
+}
+
+figure img {
+  width: 100%;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.temple-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: small;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: -9px;
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  background-color: #2e241f;
+  color: #f5e7d9;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer #lastModified {
+  color: yellow;
+  margin-top: 0.3rem;
+}

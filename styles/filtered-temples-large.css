@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 888px;
+    margin: 0 auto;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  #navMenu {
+    display: block;
+    position: static;
+    background: none;
+    width: auto;
+    border-top: none;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+
+  .figure-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
