@@ -302,3 +302,74 @@ button,
   border-radius: 50px;
   font-size: 0.85rem;
 }
+
+/* ========== NEW CLASSES FOR MOVED INLINE STYLES ========== */
+
+/* Right-aligned label in site badge */
+.plan-doc-label {
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+
+/* Paragraph under h1 in site name section */
+.site-name-desc {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Colored note for color schema application */
+.color-apply-note {
+  font-size: 0.9rem;
+  background: #ede0cf;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+}
+
+/* Cards for typography demo */
+.typography-demo-card {
+  background: #f8f2e6;
+  padding: 1rem;
+  border-radius: 28px;
+  flex: 1;
+}
+
+/* Font demo classes for Montserrat and Lato */
+.font-demo-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.font-demo-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-demo-lato-italic {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+
+/* Wireframe note (legend) */
+.wireframe-note {
+  background-color: #ede4d3;
+  border-radius: 20px;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Flex container for the info section (project alignment & standards) */
+.info-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.info-flex-item {
+  flex: 1;
+}
+
+/* Small margin-bottom utility for a wireframe item */
+.wf-item-mb {
+  margin-bottom: 0.6rem;
+}
