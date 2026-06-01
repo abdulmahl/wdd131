@@ -1,0 +1,304 @@
+/* ---------- CSS RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color schema applied to the document */
+:root {
+  --primary-dark: #2c553c; /* forest green: headings, accents, borders */
+  --secondary-sand: #e6dab9; /* warm beige/sand: body background, cards */
+  --accent-wood: #a67c52; /* wood brown: links, highlights, buttons */
+  --text-dark: #1e2a24; /* near-black with green undertone */
+  --light-bg: #fdf8f0; /* off-white for content cards / contrast */
+  --wireframe-bg: #e9e5d8;
+  --border-subtle: #cbbf9a;
+}
+
+body {
+  font-family: "Lato", "Segoe UI", sans-serif;
+  background-color: var(--secondary-sand);
+  color: var(--text-dark);
+  line-height: 1.5;
+  padding: 2rem 1.5rem;
+}
+
+.plan-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--light-bg);
+  border-radius: 32px;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 2.5rem 2rem;
+  transition: all 0.2s ease;
+}
+
+/* Typography: headings Montserrat */
+h1,
+h2,
+h3,
+h4,
+.site-name,
+.logo-text,
+.wireframe-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--primary-dark);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  border-left: 6px solid var(--accent-wood);
+  padding-left: 1.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--accent-wood);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin: 1.8rem 0 1.2rem 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0.8rem 0;
+  color: var(--primary-dark);
+}
+
+.section-subhead {
+  color: #476b4f;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* layout & cards */
+.site-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: #ede4d3;
+  padding: 1rem 1.5rem;
+  border-radius: 60px;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.logo-mock {
+  background: var(--primary-dark);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin: 1.5rem 0 0.8rem;
+}
+
+.color-card {
+  flex: 1;
+  min-width: 140px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+}
+
+.color-swatch {
+  height: 90px;
+  width: 100%;
+}
+
+.color-info {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.usage-note {
+  font-size: 0.85rem;
+  color: #4a5b4e;
+  margin-top: 0.2rem;
+}
+
+.scenario-box {
+  background: #f5efe3;
+  padding: 1rem 1.5rem;
+  border-radius: 28px;
+  margin: 1rem 0;
+  border-left: 8px solid var(--accent-wood);
+}
+
+/* Wireframe sections */
+.wireframes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wireframe-card {
+  flex: 1;
+  min-width: 280px;
+  background: #fcf8f0;
+  border-radius: 28px;
+  border: 1px solid var(--border-subtle);
+  padding: 1.2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.wireframe-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* wireframe mockup styles (simple blocks) */
+.wireframe-mobile,
+.wireframe-desktop {
+  background-color: var(--wireframe-bg);
+  border-radius: 24px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.wf-item {
+  background: #dbcfac;
+  border-radius: 20px;
+  padding: 0.8rem 0.6rem;
+  text-align: center;
+  font-weight: 500;
+  color: #2a3a2f;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  border: 1px solid #bfae83;
+}
+
+.wf-header {
+  background: #c7b68b;
+  font-weight: bold;
+}
+
+.wf-hero {
+  background: #b7a06e;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e2c2a;
+}
+
+.wf-main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.desktop-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.8rem;
+}
+
+.wf-sidebar {
+  background: #c2ad7f;
+}
+
+.wf-footer {
+  background: #a99166;
+  margin-top: 0.2rem;
+}
+
+.mock-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background: #2c553c30;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  margin-bottom: 0.25rem;
+}
+
+hr {
+  margin: 2rem 0 0.5rem;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-wood),
+    var(--primary-dark),
+    var(--secondary-sand)
+  );
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #5d6e55;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.8rem;
+}
+
+a {
+  color: var(--accent-wood);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dotted transparent;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary-dark);
+}
+
+/* responsiveness */
+@media (max-width: 750px) {
+  body {
+    padding: 1rem;
+  }
+  .plan-container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+button,
+.accent-badge {
+  background-color: var(--accent-wood);
+  color: white;
+  border-radius: 40px;
+  padding: 0.2rem 1rem;
+}
+
+.domain-tag {
+  font-family: monospace;
+  background: #e9dfce;
+  padding: 0.25rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+}

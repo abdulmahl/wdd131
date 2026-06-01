@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
+    <meta
+      name="description"
+      content="Website planning document for TrailWise – a community-driven hiking and backpacking guide. Includes site purpose, scenarios, color schema, typography, and responsive wireframes."
+    />
+    <link rel="stylesheet" href="styles/siteplan.css" />
+    <title>TrailWise · Site Plan | WDD 131 Project</title>
+
+    <!-- Google Fonts: Typography plan (Montserrat for headings, Lato for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <div class="plan-container">
+      <!-- Header with logo / site identity -->
+      <div class="site-badge">
+        <div class="logo-mock"><span>⛰️</span> TrailWise</div>
+        <div class="domain-tag">🌐 trailwise.outdoor · domain available</div>
+        <div style="margin-left: auto; font-size: 0.85rem">
+          📋 Website Planning Document
+        </div>
+      </div>
+
+      <!-- Site Name Section -->
+      <section>
+        <h1>🌲 TrailWise – Community Hiking Hub</h1>
+        <p style="font-size: 1.1rem; margin-top: 0.5rem">
+          <strong>Site name rationale:</strong> "TrailWise" reflects
+          intelligence, guidance, and a deep connection to trails & nature. The
+          name is memorable and suggests trustworthy outdoor expertise. It
+          positions the platform as the go-to resource for hikers, backpackers,
+          and nature lovers seeking curated trail data and gear wisdom.
+        </p>
+        <p>
+          🔍 <em>Optional domain availability:</em> trailwise.org |
+          trailwise.guide
+        </p>
+      </section>
+
+      <!-- Site Purpose -->
+      <section>
+        <h2>📌 Site Purpose</h2>
+        <p>
+          TrailWise serves as an interactive hub for hikers and backpackers
+          across the Pacific Northwest and beyond. The website provides
+          <strong
+            >detailed trail guides, real-time community Q&A, essential gear
+            checklists, and a membership portal</strong
+          >
+          to access exclusive route maps. It bridges the gap between beginners
+          and experienced adventurers, promoting safety, environmental
+          awareness, and outdoor community connections.
+        </p>
+      </section>
+
+      <!-- Scenarios (at least two) -->
+      <section>
+        <h2>🧭 User Scenarios</h2>
+        <div class="scenario-box">
+          <p>
+            <strong
+              >🗺️ “Which trails near the Columbia River Gorge offer moderate
+              difficulty and allow dogs on-leash?”</strong
+            ><br />
+            → A visitor planning a weekend trip with their pet wants filtered,
+            reliable dog-friendly trail info with elevation and distance
+            details.
+          </p>
+        </div>
+        <div class="scenario-box">
+          <p>
+            <strong
+              >🎒 “What are the top 5 lightweight backpacking food essentials
+              for a 3-day solo trip?”</strong
+            ><br />
+            → A solo backpacker preparing for an overnight needs quick access to
+            expert gear lists, nutrition tips, and community-voted packing
+            hacks.
+          </p>
+        </div>
+        <div class="scenario-box">
+          <p>
+            <em>➕ bonus scenario:</em> “How do I join the TrailWise ambassador
+            program to lead group hikes?” — representing community engagement &
+            membership goals.
+          </p>
+        </div>
+      </section>
+
+      <!-- Color Schema with usage description -->
+      <section>
+        <h2>🎨 Color Schema</h2>
+        <p>
+          Selected palette balances natural, earthy tones with strong
+          readability and accessible contrast. Applied throughout the planning
+          document to demonstrate visual harmony.
+        </p>
+        <div class="color-palette">
+          <div class="color-card">
+            <div class="color-swatch" style="background-color: #2c553c"></div>
+            <div class="color-info">
+              <strong>Forest Green</strong> #2C553C<br />
+              <span class="usage-note"
+                >→ Headings, primary navigation, footer accents, buttons,
+                borders</span
+              >
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background-color: #e6dab9"></div>
+            <div class="color-info">
+              <strong>Sand Beige</strong> #E6DAB9<br />
+              <span class="usage-note"
+                >→ Page background, secondary containers, soft sections</span
+              >
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background-color: #a67c52"></div>
+            <div class="color-info">
+              <strong>Warm Wood</strong> #A67C52<br />
+              <span class="usage-note"
+                >→ Accent color, links, hover states, call-to-action
+                elements</span
+              >
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background-color: #fdf8f0"></div>
+            <div class="color-info">
+              <strong>Off-white</strong> #FDF8F0<br />
+              <span class="usage-note"
+                >→ Content cards, main container background, contrast for
+                text</span
+              >
+            </div>
+          </div>
+        </div>
+        <p
+          style="
+            font-size: 0.9rem;
+            background: #ede0cf;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+          "
+        >
+          ✅ <strong>Applied on this document:</strong> headings in Forest
+          Green, body background Sand Beige, content container Off-white, accent
+          elements use Warm Wood.
+        </p>
+      </section>
+
+      <!-- Typography -->
+      <section>
+        <h2>🔤 Typography</h2>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1rem 0 0.5rem;
+          "
+        >
+          <div
+            style="
+              background: #f8f2e6;
+              padding: 1rem;
+              border-radius: 28px;
+              flex: 1;
+            "
+          >
+            <h3 style="margin: 0 0 0.5rem 0">Montserrat</h3>
+            <p
+              style="
+                font-family: &quot;Montserrat&quot;, sans-serif;
+                font-weight: 600;
+              "
+            >
+              Headings: H1, H2, H3, logo, navigation titles
+            </p>
+            <p style="font-family: &quot;Montserrat&quot;, sans-serif">
+              Clean, geometric sans‑serif for strong hierarchy.
+            </p>
+          </div>
+          <div
+            style="
+              background: #f8f2e6;
+              padding: 1rem;
+              border-radius: 28px;
+              flex: 1;
+            "
+          >
+            <h3 style="margin: 0 0 0.5rem 0">Lato</h3>
+            <p style="font-family: &quot;Lato&quot;, sans-serif">
+              Body text, paragraphs, scenarios, wireframe labels, and all
+              supporting content. Highly readable on both mobile and desktop.
+            </p>
+            <p
+              style="
+                font-family: &quot;Lato&quot;, sans-serif;
+                font-style: italic;
+              "
+            >
+              Italic version used for subtle notes.
+            </p>
+          </div>
+        </div>
+        <p>
+          <strong>Usage plan:</strong> Lato for all body copy, meta info, and
+          buttons. Montserrat for all headings and major structural titles. No
+          more than two font families — ensures clean performance and consistent
+          brand identity.
+        </p>
+      </section>
+
+      <!-- Wireframes: Mobile & Desktop (home page layout) -->
+      <section>
+        <h2>📐 Wireframes – Home Page Layout</h2>
+        <p>
+          Simple structural wireframes showing content blocks and responsive
+          behavior. Actual project will include images, typography, and real
+          interactive elements.
+        </p>
+
+        <div class="wireframes-wrapper">
+          <!-- MOBILE WIREFRAME (stacked single column) -->
+          <div class="wireframe-card">
+            <div class="wireframe-title">📱 Mobile View</div>
+            <div class="wireframe-mobile">
+              <div class="wf-item wf-header">
+                🌲 Header: Logo + Hamburger Menu
+              </div>
+              <div class="wf-item wf-hero">
+                Hero Section · "Discover Trails"
+              </div>
+              <div class="wf-main-grid">
+                <div class="wf-item">⭐ Featured Trail Card 1</div>
+                <div class="wf-item">⭐ Featured Trail Card 2</div>
+                <div class="wf-item">📋 Community Picks / Gear Spotlight</div>
+              </div>
+              <div class="wf-item">📩 Newsletter Signup / Call to Action</div>
+              <div class="wf-item wf-footer">
+                Footer: links, social, copyright
+              </div>
+            </div>
+            <p
+              style="font-size: 0.75rem; margin-top: 0.8rem; text-align: center"
+            >
+              Mobile: stacked blocks, full-width content, hamburger navigation,
+              priority on vertical scrolling.
+            </p>
+          </div>
+
+          <!-- DESKTOP WIREFRAME (two-column layout) -->
+          <div class="wireframe-card">
+            <div class="wireframe-title">🖥️ Desktop (Wider) View</div>
+            <div class="wireframe-desktop">
+              <div class="wf-item wf-header">
+                🌲 TrailWise Logo | Navigation: Trails · Gear · Community · Join
+              </div>
+              <div class="wf-item wf-hero">
+                Hero banner: "Plan Your Next Summit" + search bar / image
+                placeholder
+              </div>
+              <div class="desktop-grid">
+                <div class="wf-main-area">
+                  <div class="wf-item" style="margin-bottom: 0.6rem">
+                    📌 Main Content: Featured trail highlights & curated guides
+                  </div>
+                  <div class="wf-item">
+                    🏕️ Latest trip reports / route conditions
+                  </div>
+                  <div class="wf-item">
+                    🗣️ Forum preview: recent discussions
+                  </div>
+                </div>
+                <div class="wf-sidebar">
+                  <div class="wf-item">🔖 Sidebar: Gear checklist widget</div>
+                  <div class="wf-item">📅 Upcoming group hikes & events</div>
+                  <div class="wf-item">🎯 Member spotlight & quick tips</div>
+                </div>
+              </div>
+              <div class="wf-item wf-footer">
+                Footer: site map, resources, newsletter signup, social proof
+              </div>
+            </div>
+            <p
+              style="font-size: 0.75rem; margin-top: 0.8rem; text-align: center"
+            >
+              Desktop: 2-column layout (main content + sidebar) for richer
+              information density.
+            </p>
+          </div>
+        </div>
+
+        <!-- Additional wireframe note -->
+        <div
+          style="
+            background-color: #ede4d3;
+            border-radius: 20px;
+            padding: 0.8rem 1.2rem;
+            margin-top: 0.5rem;
+          "
+        >
+          <span class="mock-label">📌 wireframe legend</span>
+          <p style="margin-top: 0.3rem; font-size: 0.9rem">
+            Each colored block represents a distinct content region. Actual home
+            page will use real imagery, interactive cards, and dynamic content.
+            The layout adapts via CSS grid & flex — mobile-first with breakpoint
+            at 768px.
+          </p>
+        </div>
+      </section>
+
+      <!-- Additional info: living document note, audit, development plan -->
+      <hr />
+      <section
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          justify-content: space-between;
+          margin-top: 1rem;
+        "
+      >
+        <div style="flex: 1">
+          <h3>🗂️ Project Alignment</h3>
+          <p>
+            This site plan is a living blueprint. During development, the home
+            page will integrate dynamic elements (JavaScript-driven trail cards,
+            local storage for preferences) as per WDD 131 requirements. The
+            color schema & typography will remain consistent across all project
+            pages.
+          </p>
+        </div>
+        <div style="flex: 1">
+          <h3>✅ Standards & Testing</h3>
+          <p>
+            Semantic HTML5, ARIA landmarks, WCAG contrast (foreground/background
+            ratios verified), and Google Fonts optimized for performance. Final
+            site plan validated with W3C validator and Lighthouse (accessibility
+            / SEO best practices).
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          🌿 <strong>TrailWise &bull; Planning Document</strong> 
+        </p>
+       
+
+        <p>
+          © <span id="year"></span> &bull; Mduduzi Abdul Mahlangu &bull; Site
+          Planning Map
+        </p>
+        <p>
+          <span id="lastModified"></span>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
