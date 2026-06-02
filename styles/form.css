@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #1a365d;
+  --accent-color: #2b6cb0;
+  --bg-color: #f7fafc;
+  --card-bg: #ffffff;
+  --text-color: #2d3748;
+  --border-color: #cbd5e0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  max-width: 555px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 555px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Form Container Card Layout */
+.review-form {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: #e53e3e;
+}
+
+/* Inputs, Dropdowns, Textarea */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+}
+
+/* Fieldset Resets */
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+/* Horizontal alignments for checkboxes & radios */
+.rating-options,
+.checkbox-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.rating-options label,
+.checkbox-options label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+/* Submit Action Styles */
+.submit-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Confirmation Page Styles */
+.confirmation-card {
+  text-align: center;
+  background: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.counter-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ebf8ff;
+  border-left: 4px solid var(--accent-color);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 555px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.9rem;
+}

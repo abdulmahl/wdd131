@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form - WDD 131</title>
+    <meta
+      name="description"
+      content="Product Review Form for WDD 131: Dynamic Web Fundamentals at BYU-Idaho."
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+      <form method="get" action="review.html" class="review-form">
+        <div class="form-group">
+          <label for="product-name"
+            >Product Name <span class="required">*</span></label
+          >
+          <select id="product-name" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group rating-fieldset">
+          <legend>Overall Rating <span class="required">*</span></legend>
+          <div class="rating-options">
+            <label
+              ><input
+                type="radio"
+                id="rate-1"
+                name="rating"
+                value="1"
+                required
+              />
+              1 ☆</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="rate-2"
+                name="rating"
+                value="2"
+                required
+              />
+              2 ☆</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="rate-3"
+                name="rating"
+                value="3"
+                required
+              />
+              3 ☆</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="rate-4"
+                name="rating"
+                value="4"
+                required
+              />
+              4 ☆</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="rate-5"
+                name="rating"
+                value="5"
+                required
+              />
+              5 ☆</label
+            >
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="install-date"
+            >Date of Installation <span class="required">*</span></label
+          >
+          <input type="date" id="install-date" name="installDate" required />
+        </div>
+
+        <fieldset class="form-group features-fieldset">
+          <legend>Useful Features (Check all that apply)</legend>
+          <div class="checkbox-options">
+            <label
+              ><input
+                type="checkbox"
+                id="feature-performance"
+                name="features"
+                value="performance"
+              />
+              Performance</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                id="feature-durability"
+                name="features"
+                value="durability"
+              />
+              Durability</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                id="feature-design"
+                name="features"
+                value="design"
+              />
+              Design</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                id="feature-ease"
+                name="features"
+                value="easeOfUse"
+              />
+              Ease of Use</label
+            >
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="written-review">Written Review (Optional)</label>
+          <textarea
+            id="written-review"
+            name="writtenReview"
+            rows="5"
+            placeholder="Share your experience with this product..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="user-name">Your Name (Optional)</label>
+          <input
+            type="text"
+            id="user-name"
+            name="userName"
+            placeholder="e.g., John Doe"
+          />
+        </div>
+
+        <input type="submit" value="Post Review" class="submit-btn" />
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> &bull; Mduduzi Abdul Mahlangu &bull; Product
+        Review Form
+      </p>
+      <p>
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
