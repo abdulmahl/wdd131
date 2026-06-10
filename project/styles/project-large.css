@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  .filter-controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  aside {
+    margin-top: 2rem;
+  }
+
+  .filter-controls {
+    flex-direction: row;
+    justify-content:start;
+  }
+}

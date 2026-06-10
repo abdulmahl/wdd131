@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join the Community Network · TrailWise</title>
+    <meta
+      name="description"
+      content="Register into the TrailWise network registration base to secure exclusive map paths."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/project-base.css" />
+    <link rel="stylesheet" href="styles/project-large.css" />
+    <script src="scripts/project.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <h1>
+          <a href="/project/index.html" class="logo-mock"> 🌲 TrailWise </a>
+        </h1>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trails.html">Explore Trails</a></li>
+          <li><a href="join.html" class="active">Join Hub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Ambassador Registration Portal</h2>
+      <p>
+        Apply below to register your community account profile data securely.
+      </p>
+
+      <form method="GET" action="index.html">
+        <fieldset>
+          <legend>Personal Dossier Details</legend>
+
+          <div class="form-group">
+            <label for="full-name">Full Legal Name *</label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullname"
+              required
+              placeholder="Jane Doe"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email-addr">Email Address *</label>
+            <input
+              type="email"
+              id="email-addr"
+              name="email"
+              required
+              placeholder="jane@example.com"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Backpacking Experience Profile</legend>
+
+          <div class="form-group">
+            <label for="hike-style">Primary Exploration Strategy</label>
+            <select id="hike-style" name="hikestyle">
+              <option value="casual">Day Hiking Excursions</option>
+              <option value="backpack">Multi-day Wilderness Backpacking</option>
+              <option value="alpine">Technical Alpine Mountaineering</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="user-bio">Brief Outdoor Background Description</label>
+            <textarea
+              id="user-bio"
+              name="userbio"
+              rows="4"
+              placeholder="Tell us about your favorite trails..."
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit Membership Profile</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | TrailWise Hub | Mduduzi Abdul
+        Mahlangu
+      </p>
+      <p id="lastModified"></p>
+      <p style="margin-top: 0.5rem">
+        <a href="references.html">Project Attributions & Reference Sources</a>
+      </p>
+    </footer>
+  </body>
+</html>

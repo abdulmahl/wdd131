@@ -1,0 +1,259 @@
+/* ---------- CSS RESET & GLOBAL ROOT ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #2c553c; /* Forest Green */
+  --secondary-sand: #e6dab9; /* Sand Beige */
+  --accent-wood: #a67c52; /* Warm Wood */
+  --text-dark: #1e2a24; /* Dark Charcoal */
+  --light-bg: #fdf8f0; /* Off-white */
+  --border-subtle: #cbbf9a;
+}
+
+body {
+  font-family: "Lato", "Segoe UI", sans-serif;
+  background-color: var(--secondary-sand);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+h1,
+h2,
+h3,
+h4,
+.logo-mock {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+/* ---------- NAVIGATION & HEADER ---------- */
+header {
+  background-color: var(--secondary-sand);
+  border-bottom: 3px solid var(--accent-wood);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  max-width: 999px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-mock {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+}
+
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  gap: 1.3rem;
+  background-color: var(--secondary-sand);
+  padding: 1rem;
+  border-bottom: 3px solid var(--accent-wood);
+}
+
+.home-grid {
+  grid-template-columns: 1fr;
+}
+
+nav ul li a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--text-dark);
+  text-decoration: 3px #a67c52 underline;
+  text-underline-offset: 0.444rem;
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+main {
+  max-width: 999px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  min-height: 70vh;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  background:
+    linear-gradient(rgba(44, 85, 60, 0.7), rgba(44, 85, 60, 0.5)),
+    url("https://picsum.photos/id/1015/1200/500") no-repeat center center/cover;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 24px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- GRID SYSTEM & CARDS ---------- */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  background-color: var(--accent-wood);
+  color: white;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+aside {
+  background: var(--light-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-subtle);
+  height: fit-content;
+  margin-top: 1rem;
+}
+
+/* ---------- INTERACTIVE CONTROLS ---------- */
+.filter-controls {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+select,
+input,
+textarea {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* ---------- FORMS ---------- */
+fieldset {
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--light-bg);
+}
+
+legend {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--primary-dark);
+  padding: 0 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--accent-wood);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--light-bg);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  max-width: 999px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: var(--secondary-sand);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

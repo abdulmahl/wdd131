@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrailWise · Pacific Northwest Hiking Hub</title>
+    <meta
+      name="description"
+      content="Discover detailed trail guides, real-time community insights, and essential gear checklists for your next Pacific Northwest adventure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/project-base.css" />
+    <link rel="stylesheet" href="styles/project-large.css" />
+    <script src="scripts/project.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <h1>
+          <a href="/project/index.html" class="logo-mock"> 🌲 TrailWise </a>
+        </h1>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="trails.html">Explore Trails</a></li>
+          <li><a href="join.html">Join Hub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Discover Your Next Summit Route</h1>
+        <p>
+          Curated expert data, trail reports, and true outdoor safety
+          companionship.
+        </p>
+      </section>
+
+      <div class="home-grid">
+        <section>
+          <h2>Welcome to the Hub</h2>
+          <p style="margin-bottom: 1.5rem">
+            TrailWise bridges the gap between wilderness beginners and technical
+            mountaineers across the country. Our focus scales safety,
+            environmental sustainability, and outdoor accessibility.
+          </p>
+
+          <h3>Highlighted Features</h3>
+          <div class="card-container" style="margin-top: 1rem">
+            <article class="card">
+              <img
+                src="https://picsum.photos/id/1043/400/250"
+                alt="Lush Forest Trail Overview"
+                loading="lazy"
+                width="400"
+                height="250"
+              />
+              <div class="card-content">
+                <h3>Verified Route Planning</h3>
+                <p>
+                  Skip guessing path structures. Access high resolution tracking
+                  parameters mapping absolute difficulty levels accurately.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://picsum.photos/id/1050/400/250"
+                alt="Mountain pass landscape"
+                loading="lazy"
+                width="400"
+                height="250"
+              />
+              <div class="card-content">
+                <h3>Leave No Trace Philosophy</h3>
+                <p>
+                  Learn execution methodologies strictly maintaining wilderness
+                  infrastructure integrity properly across national ecosystems.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside>
+          <h3>Community Metrics</h3>
+          <p
+            id="analytics-display"
+            style="margin: 1rem 0; font-size: 0.95rem"
+          ></p>
+          <hr
+            style="
+              margin: 1rem 0;
+              border: 0;
+              border-top: 1px solid var(--border-subtle);
+            "
+          />
+          <h4>Weekly Gear Focus</h4>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem">
+            Top 5 lightweight backpacking food essentials optimized for 3-day
+            high endurance solo trails.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | TrailWise Hub | Mduduzi Abdul
+        Mahlangu
+      </p>
+      <p id="lastModified"></p>
+      <p style="margin-top: 0.5rem">
+        <a href="references.html">Project Attributions & Reference Sources</a>
+      </p>
+    </footer>
+  </body>
+</html>
