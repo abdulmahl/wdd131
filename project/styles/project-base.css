@@ -177,13 +177,28 @@ aside {
   margin-top: 1rem;
 }
 
+aside p:first-child {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+aside p:last-child {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+aside hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1.5px solid var(--border-subtle);
+}
+
 /* ---------- INTERACTIVE CONTROLS ---------- */
 .filter-controls {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
 }
 
 select,
@@ -238,6 +253,11 @@ button[type="submit"]:hover {
   background-color: var(--accent-wood);
 }
 
+/* Trails  */
+.filter {
+  margin: 1.5rem auto;
+}
+
 /* ---------- FOOTER ---------- */
 footer {
   background-color: var(--primary-dark);
@@ -256,4 +276,8 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+footer p:last-child {
+  margin-top: 0.5rem;
 }
