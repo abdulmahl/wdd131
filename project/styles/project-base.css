@@ -120,7 +120,7 @@ main {
 
 .badge {
   background: var(--primary-dark);
-  padding: 0.11rem .33rem;
+  padding: 0.11rem 0.33rem;
   border-radius: 12px;
   color: var(--light-bg);
 }
@@ -198,7 +198,7 @@ aside p:first-child {
   font-size: 0.95rem;
 }
 
-aside p:last-child {
+#weeklyTips {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }

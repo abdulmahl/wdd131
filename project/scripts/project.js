@@ -33,10 +33,39 @@ const trails = [
   },
 ];
 
+function updateWeeklyGearFocus() {
+  const gearContainer = document.getElementById("weeklyTips");
+  if (!gearContainer) return;
+
+  // Array of weekly tips (you can add as many as you like)
+  const weeklyTips = [
+    "🥾 **Top 5 lightweight backpacking food essentials** – nuts, dried fruit, instant oats, jerky, and dark chocolate.",
+    "💧 **Hydration hacks** – Use a collapsible bottle and carry a backup filter.",
+    "🧥 **Layering system** – Base layer (wool), mid layer (fleece), shell (waterproof).",
+    "🔋 **Power management** – Bring a 10,000 mAh power bank for multi‑day trips.",
+    "🧭 **Navigation** – Download offline maps and carry a paper backup.",
+    "🍫 **High‑energy snacks** – Peanut butter packets, energy chews, and trail mix.",
+    "🩹 **First aid essentials** – Moleskin, antiseptic wipes, and a SAM splint.",
+    "🌙 **Sleep system** – Closed‑cell foam pad plus inflatable for cold nights.",
+  ];
+
+  // Calculate week number based on the current date (changes every Monday)
+  const now = new Date();
+  const startOfYear = new Date(now.getFullYear(), 0, 1);
+  const daysSinceStart = Math.floor(
+    (now - startOfYear) / (24 * 60 * 60 * 1000),
+  );
+  const weekNumber = Math.floor(daysSinceStart / 7);
+  const tipIndex = weekNumber % weeklyTips.length;
+
+  gearContainer.innerHTML = weeklyTips[tipIndex];
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupMobileNav();
   setupFooterDates();
   setupVisitorAnalytics();
+  updateWeeklyGearFocus();
 
   // Conditionally process data if target display elements exist
   if (document.getElementById("trail-gallery-target")) {
