@@ -321,7 +321,7 @@ button[type="submit"]:hover {
   gap: 1rem;
   margin-top: 1.5rem;
 }
-.btn-primary {
+.btn-explore {
   background: var(--primary-dark);
   color: white;
   padding: 0.6rem 1.4rem;
@@ -331,10 +331,10 @@ button[type="submit"]:hover {
   display: inline-block;
   transition: background-color 0.2s;
 }
-.btn-primary:hover {
+.btn-explore:hover {
   background-color: var(--accent-wood);
 }
-.btn-secondary {
+.btn-home {
   background: transparent;
   border: 2px solid var(--accent-wood);
   padding: 0.6rem 1.4rem;
@@ -344,7 +344,7 @@ button[type="submit"]:hover {
   color: var(--text-dark);
   transition: all 0.2s;
 }
-.btn-secondary:hover {
+.btn-home:hover {
   background-color: var(--accent-wood);
   color: white;
 }
@@ -353,7 +353,7 @@ button[type="submit"]:hover {
   margin: 1rem 0 1rem 0;
 }
 
-.badge {
+.thanyou-badge {
   background-color: var(--primary-dark);
   color: var(--light-bg);
   padding: 0.25rem 0.6rem;
