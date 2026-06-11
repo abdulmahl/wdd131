@@ -114,6 +114,14 @@ main {
   min-height: 70vh;
 }
 
+.apply-text {
+  padding: 1rem 0;
+}
+
+.badge {
+  background: var(--primary-dark);
+}
+
 /* ---------- HERO SECTION ---------- */
 .hero {
   background:
