@@ -18,89 +18,7 @@
     <link rel="stylesheet" href="styles/project-base.css" />
     <link rel="stylesheet" href="styles/project-large.css" />
     <script src="scripts/project.js" defer></script>
-    <style>
-      /* Additional custom classes – no inline style attributes used */
-      .thankyou-hero {
-        background: linear-gradient(135deg, #2c553c 0%, #1e3a2a 100%);
-        margin-bottom: 2rem;
-      }
-      .thankyou-container {
-        max-width: 800px;
-        margin: 0 auto 2rem auto;
-      }
-      .summary-card {
-        background: var(--light-bg);
-        border-radius: 28px;
-      }
-      .profile-summary-grid {
-        display: grid;
-        gap: 0.75rem;
-        margin: 1.2rem 0;
-      }
-      .highlight-data {
-        font-weight: 600;
-        color: #2c553c;
-        background: #fdf8f0;
-        padding: 0.1rem 0.4rem;
-        border-radius: 12px;
-      }
-      .bio-display {
-        background: #f4efdf;
-        display: inline-block;
-        width: 100%;
-        padding: 0.75rem;
-        border-radius: 16px;
-        margin-top: 0.25rem;
-      }
-      .next-steps {
-        background: #e6dab9;
-        padding: 0.8rem 1rem;
-        border-radius: 20px;
-        margin: 1.2rem 0;
-      }
-      .next-steps p {
-        margin: 0;
-        font-weight: 500;
-      }
-      .button-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: space-between;
-        margin-top: 1.5rem;
-      }
-      .btn-primary {
-        background: var(--primary-dark);
-        color: white;
-        padding: 0.6rem 1.4rem;
-        border-radius: 40px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: background-color 0.2s;
-      }
-      .btn-primary:hover {
-        background-color: var(--accent-wood);
-      }
-      .btn-secondary {
-        background: transparent;
-        border: 2px solid var(--accent-wood);
-        padding: 0.6rem 1.4rem;
-        border-radius: 40px;
-        text-decoration: none;
-        font-weight: 600;
-        color: var(--accent-wood);
-        transition: all 0.2s;
-      }
-      .btn-secondary:hover {
-        background-color: var(--accent-wood);
-        color: white;
-      }
-      .community-badge {
-        text-align: center;
-        margin: 1rem 0 1rem 0;
-      }
-    </style>
+    <script src="scripts/thankyou.js" defer></script>
   </head>
   <body>
     <header>
@@ -128,56 +46,52 @@
     </header>
 
     <main>
-      <div class="thankyou-container">
-        <div class="card summary-card">
-          <div class="card-content">
-            <h2 id="greetingMessage" style="color: var(--primary-dark)">
-              Thanks, Explorer!
-            </h2>
-            <p style="font-size: 1.05rem; margin-top: 0.5rem">
-              Your membership profile has been registered successfully. You are
-              now part of a growing community dedicated to ethical hiking,
-              safety, and breathtaking summits.
+      <div class="card summary-card">
+        <div class="card-content">
+          <h2 id="greetingMessage" style="color: var(--primary-dark)">
+            Thanks, Explorer!
+          </h2>
+          <p style="font-size: 1.05rem; margin-top: 0.5rem">
+            Your membership profile has been registered successfully. You are
+            now part of a growing community dedicated to ethical hiking, safety,
+            and breathtaking summits.
+          </p>
+
+          <hr style="margin: 1.5rem 0; border-color: var(--border-subtle)" />
+
+          <h3>📋 Ambassador profile summary</h3>
+          <div class="profile-summary-grid">
+            <p>
+              <strong>🧑‍🦯 Full name:</strong>
+              <span id="displayFullName" class="highlight-data">—</span>
             </p>
+            <p>
+              <strong>📧 Email address:</strong>
+              <span id="displayEmail" class="highlight-data">—</span>
+            </p>
+            <p>
+              <strong>🏕️ Primary exploration style:</strong>
+              <span id="displayHikeStyle" class="highlight-data">—</span>
+            </p>
+            <p>
+              <strong>🌿 Outdoor background:</strong><br />
+              <span id="displayBio" class="bio-display">—</span>
+            </p>
+          </div>
 
-            <hr style="margin: 1.5rem 0; border-color: var(--border-subtle)" />
+          <div class="next-steps">
+            <p>
+              🎒 <strong>Next steps:</strong> Keep an eye on your inbox for
+              seasonal trail guides, gear checklists, and exclusive local meetup
+              invitations.
+            </p>
+          </div>
 
-            <h3>📋 Ambassador profile summary</h3>
-            <div class="profile-summary-grid">
-              <p>
-                <strong>🧑‍🦯 Full name:</strong>
-                <span id="displayFullName" class="highlight-data">—</span>
-              </p>
-              <p>
-                <strong>📧 Email address:</strong>
-                <span id="displayEmail" class="highlight-data">—</span>
-              </p>
-              <p>
-                <strong>🏕️ Primary exploration style:</strong>
-                <span id="displayHikeStyle" class="highlight-data">—</span>
-              </p>
-              <p>
-                <strong>🌿 Outdoor background:</strong><br />
-                <span id="displayBio" class="bio-display">—</span>
-              </p>
-            </div>
-
-            <div class="next-steps">
-              <p>
-                🎒 <strong>Next steps:</strong> Keep an eye on your inbox for
-                seasonal trail guides, gear checklists, and exclusive local
-                meetup invitations.
-              </p>
-            </div>
-
-            <div class="button-group">
-              <a href="trails.html" class="btn-primary"
-                >🥾 Explore trail network</a
-              >
-              <a href="index.html" class="btn-secondary"
-                >🏠 Return to homepage</a
-              >
-            </div>
+          <div class="button-group">
+            <a href="trails.html" class="btn-primary"
+              >🥾 Explore trail network</a
+            >
+            <a href="index.html" class="btn-secondary">🏠 Return to homepage</a>
           </div>
         </div>
       </div>
@@ -197,71 +111,5 @@
         <a href="references.html">Project Attributions & Reference Sources</a>
       </p>
     </footer>
-
-    <script>
-      (function displaySubmissionData() {
-        const urlParams = new URLSearchParams(window.location.search);
-
-        const fullName = urlParams.get("fullname") || "";
-        const email = urlParams.get("email") || "";
-        const hikeStyleRaw = urlParams.get("hikestyle") || "";
-        const userBio = urlParams.get("userbio") || "";
-
-        let hikeStyleDisplay = "Not specified";
-        if (hikeStyleRaw === "casual")
-          hikeStyleDisplay = "Day Hiking Excursions";
-        else if (hikeStyleRaw === "backpack")
-          hikeStyleDisplay = "Multi-day Wilderness Backpacking";
-        else if (hikeStyleRaw === "alpine")
-          hikeStyleDisplay = "Technical Alpine Mountaineering";
-        else if (hikeStyleRaw) hikeStyleDisplay = hikeStyleRaw;
-
-        const displayNameElem = document.getElementById("displayFullName");
-        const displayEmailElem = document.getElementById("displayEmail");
-        const displayHikeElem = document.getElementById("displayHikeStyle");
-        const displayBioElem = document.getElementById("displayBio");
-        const greetingElem = document.getElementById("greetingMessage");
-
-        if (displayNameElem) {
-          if (fullName.trim() !== "") {
-            displayNameElem.textContent = fullName;
-            if (greetingElem)
-              greetingElem.textContent = `🙌 Thanks, ${fullName.split(" ")[0]}!`;
-          } else {
-            displayNameElem.textContent = "Adventurer";
-            if (greetingElem)
-              greetingElem.textContent = "🙌 Thanks, Trail Explorer!";
-          }
-        }
-
-        if (displayEmailElem) {
-          displayEmailElem.textContent =
-            email && email.trim() !== ""
-              ? email
-              : "hello@trailwise.com (placeholder)";
-        }
-
-        if (displayHikeElem) displayHikeElem.textContent = hikeStyleDisplay;
-
-        if (displayBioElem) {
-          if (userBio && userBio.trim() !== "") {
-            displayBioElem.textContent = userBio;
-          } else {
-            displayBioElem.textContent =
-              "⚡ No background added yet — but we already know you love the outdoors! Feel free to update your profile later.";
-          }
-        }
-
-        if (
-          (!fullName || fullName.trim() === "") &&
-          email &&
-          email.includes("@") &&
-          greetingElem
-        ) {
-          const emailName = email.split("@")[0];
-          if (emailName) greetingElem.textContent = `🙌 Thanks, ${emailName}!`;
-        }
-      })();
-    </script>
   </body>
 </html>

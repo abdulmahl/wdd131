@@ -3,6 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .button-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -30,6 +34,6 @@
 
   .filter-controls {
     flex-direction: row;
-    justify-content:start;
+    justify-content: start;
   }
 }
