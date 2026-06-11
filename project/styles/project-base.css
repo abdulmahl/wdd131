@@ -353,14 +353,14 @@ button[type="submit"]:hover {
   margin: 1rem 0 1rem 0;
 }
 
-.thanyou-badge {
+.trailwise-badge {
   background-color: var(--primary-dark);
   color: var(--light-bg);
   padding: 0.25rem 0.6rem;
   border-radius: 12px;
   font-size: 0.8rem;
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   font-weight: 600;
 }
 
