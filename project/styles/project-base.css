@@ -120,6 +120,9 @@ main {
 
 .badge {
   background: var(--primary-dark);
+  padding: 0.11rem .33rem;
+  border-radius: 12px;
+  color: var(--light-bg);
 }
 
 /* ---------- HERO SECTION ---------- */
